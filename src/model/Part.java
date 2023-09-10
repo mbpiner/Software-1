@@ -1,32 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
-
-/**
- *
- * @author Mason
- */
-
-//took away abstract...
-
 
 public abstract class Part {
 
     private int partID, stock, min, max;
     private double price;
     private String name;
-    
-    
+
+
     //constructor
-    public Part(){
-    
+    public Part() {
+
     }
-    
-    
-    public Part(int partID, String name, int stock, int min, int max, double price){
+
+
+    public Part(int partID, String name, int stock, int min, int max, double price) {
         this.setID(partID);
         this.setName(name);
         this.setStock(stock);
@@ -35,114 +22,56 @@ public abstract class Part {
         this.setPrice(price);
 
     }
-    
-    
-    
-    
-    public void setID(int partID){
+
+
+    public void setID(int partID) {
         this.partID = partID;
     }
-    
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
-    
-    public void setStock(int stock){
+
+    public void setStock(int stock) {
         this.stock = stock;
     }
-    
-    public void setMin(int min){
+
+    public void setMin(int min) {
         this.min = min;
     }
-    
-    public void setMax(int max){
+
+    public void setMax(int max) {
         this.max = max;
     }
-    
-    public void setPrice(double price){
+
+    public void setPrice(double price) {
         this.price = price;
     }
 
 
-    
-     public int getID(){
+    public int getID() {
         return this.partID;
     }
-    
-    public String getName(){
+
+    public String getName() {
         return this.name;
     }
-    
-    public int getStock(){
+
+    public int getStock() {
         return this.stock;
     }
-    
-    public int getMin(){
+
+    public int getMin() {
         return this.min;
     }
-    
-    public int getMax(){
+
+    public int getMax() {
         return this.max;
     }
-    
-    public double getPrice(){
+
+    public double getPrice() {
         return this.price;
     }
-    
-    
-  
-    
+
+
 }
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
