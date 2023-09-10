@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 
@@ -10,10 +5,6 @@ import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-/**
- *
- * @author Mason
- */
 public class Inventory {
     
     private static ObservableList<Part> allParts = FXCollections.observableArrayList(); //partInventory
@@ -21,22 +12,9 @@ public class Inventory {
     private static int partIDCount = 0;
     private static int productIDCount = 0;
     
-    
-    
   public Inventory(){
 
     }
-    
-  /*
-  
-  
-    Inventory(ObservableList<Product> allProducts, ObservableList<Part> allParts) {
-        this.allProducts = allProducts;
-        this.allParts = allParts;
-    }
-  
-*/
-    
     
     public static void addProduct(Product newProduct){
         allProducts.add(newProduct);
@@ -52,23 +30,13 @@ public class Inventory {
     public static boolean deleteProduct(Product selectedProduct){
         return allProducts.remove(selectedProduct);
         
-        //how will this work? selectedProduct is just the actual instance name?
-        //if we want, could use the code below to be able to remove by name, ID, etc.
-        //Could be used to add a feature
-        //products.removeIf(product -> product.name.equals("Corn"));
-        //
     }
     
     
     
     public static boolean deletePart(Part selectedPart){
         return allParts.remove(selectedPart);
-        
-        //how will this work? selectedProduct is just the actual instance name?
-        //if we want, could use the code below to be able to remove by name, ID, etc.
-        //Could be used to add a feature
-        //products.removeIf(product -> product.name.equals("Corn"));
-        //
+    
     }
     
     
@@ -95,7 +63,7 @@ public class Inventory {
         if (productIndex >= 0 && productIndex < allProducts.size()) {
             allProducts.set(productIndex, newProduct);
         } else {
-            //how to make this work up the chain when something goes wrong? return type Part/Product otherwise return null?
+            
         }
     }
     
@@ -104,19 +72,13 @@ public class Inventory {
         if (partIndex >= 0 && partIndex < allParts.size()) {
             allParts.set(partIndex, newPart);
         } else {
-            //how to make this work up the chain when something goes wrong? return type Part/Product otherwise return null?
+            
         }
     }
     
     
 
-    
-    
-
-    
-    
-    
-    //get length of allParts/allProducts for setting ID's of new parts/products...
+    // get length of allParts/allProducts for setting ID's of new parts/products...
     
     
     public static int getNumParts(){
