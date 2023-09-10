@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model;
 
-/**
- *
- * @author Mason
- */
+
 public class OutsourcedPart extends Part {
     
     private String companyName;
@@ -20,12 +13,10 @@ public class OutsourcedPart extends Part {
         this.setCompanyName(companyName);
         
          
-        
     }
         
         
         public void setCompanyName(String companyName){
-            
             this.companyName = companyName;
             
         
@@ -33,7 +24,6 @@ public class OutsourcedPart extends Part {
         
         
         public String getCompanyName(){
-    
             return this.companyName;
     
         }
