@@ -91,8 +91,6 @@ public class AddProductController implements Initializable {
 
     @FXML
     public void saveProductButtonPushed(ActionEvent actionEvent) {
-        System.out.println("save Clicked");
-
 
         if (inv.getText().isEmpty() || price.getText().isEmpty() || name.getText().isEmpty()) {
 
@@ -137,10 +135,6 @@ public class AddProductController implements Initializable {
         Inventory.addProduct(product);
         product.getAssociatedParts();
         tempAssociatedPartsList.clear();
-
-
-        System.out.println(product.getAssociatedParts());
-
 
     }
 
@@ -199,11 +193,9 @@ public class AddProductController implements Initializable {
 
                 if (Inventory.isInteger(newValue, 10)) {
                     int newValueInt = Integer.parseInt(newValue);
-                    System.out.println("IS INTEGER..." + part.getID());
                     return part.getID() == newValueInt;
                 } else {
                     String lowerCaseFilter = newValue.toLowerCase();
-                    System.out.println("IS STR..." + part.getName());
                     return part.getName().toLowerCase().contains(lowerCaseFilter);
                 }
             });
