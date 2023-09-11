@@ -29,11 +29,3 @@ public class InHousePart extends Part {
 
 
 }
-
-
-
-
-
-
-
-
