@@ -208,19 +208,13 @@ public class AddPartController implements Initializable {
 
                 if (partType.equals("In-House")) {
                     machineNumberOrCompanyName.setText("Machine ID");
-                    System.out.println(partType);
-                    System.out.println("0\n");
                     inHouseOrOutsourced = "inhouse\n";
-                    System.out.println(inHouseOrOutsourced);
 
                 }
 
                 if (partType.equals("Outsourced")) {
                     machineNumberOrCompanyName.setText("Company Name");
-                    System.out.println(partType);
-                    System.out.println("1\n");
                     inHouseOrOutsourced = "outsourced\n";
-                    System.out.println(inHouseOrOutsourced);
 
 
                 }
